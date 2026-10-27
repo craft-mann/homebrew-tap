@@ -1,6 +1,6 @@
 cask "capturemann" do
-  version "0.1.0"
-  sha256 "3d9822246dea1acc414fb30e58ef419bb6e56676154c518295a16aa74b0e2e05"
+  version "0.2.0"
+  sha256 "8344dbf22eab44c95e375acb2c2ecc3d3711d5a058876ac5cf37f062b100e150"
 
   url "https://github.com/craft-mann/capturemann/releases/download/v#{version}/CaptureMann-v#{version}-macos-arm64.dmg"
   name "CaptureMann"
