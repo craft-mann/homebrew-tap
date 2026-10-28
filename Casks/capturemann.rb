@@ -1,8 +1,11 @@
 cask "capturemann" do
-  version "0.2.0"
-  sha256 "8344dbf22eab44c95e375acb2c2ecc3d3711d5a058876ac5cf37f062b100e150"
+  arch arm: "arm64", intel: "x86_64"
 
-  url "https://github.com/craft-mann/capturemann/releases/download/v#{version}/CaptureMann-v#{version}-macos-arm64.dmg"
+  version "0.2.1"
+  sha256 arm:   "e078b1fcd0d10715aa73b80040a632d46585cbe4b80cb340b28b593d514aa236",
+         intel: "0af6d0767c9b05fea6cccbe0fb18e2c3c5bfcf9578bc799e4949b2d70ff03de4"
+
+  url "https://github.com/craft-mann/capturemann/releases/download/v#{version}/CaptureMann-v#{version}-macos-#{arch}.dmg"
   name "CaptureMann"
   desc "Screenshots and screen recording with local AI captions, MCP tools and a CLI"
   homepage "https://www.craftmann.app/capturemann/"
@@ -12,7 +15,6 @@ cask "capturemann" do
     strategy :github_latest
   end
 
-  depends_on arch: :arm64
   depends_on macos: :ventura
 
   app "CaptureMann.app"
