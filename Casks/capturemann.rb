@@ -1,9 +1,9 @@
 cask "capturemann" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.3.1"
-  sha256 arm:   "fe9974c41dc206b9e05b14b87ae507ef5f935f8baf0265ae37fd205438a32342",
-         intel: "e360ae60f939f37e51ffe19b9c812d693822a0d8619b1d11228703c5f36a3db5"
+  version "0.3.2"
+  sha256 arm:   "e289c29c0c3d75d65d907174e3e53cbe55b7a2c524980a254722400a885b90c2",
+         intel: "afd4aed0bdae26aac4dc47b0dacaaa013b36e3d78a44ac86f27c5bef7b120118"
 
   url "https://github.com/craft-mann/capturemann/releases/download/v#{version}/CaptureMann-v#{version}-macos-#{arch}.dmg"
   name "CaptureMann"
